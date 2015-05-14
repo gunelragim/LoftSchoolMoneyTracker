@@ -1,39 +1,60 @@
 package ru.loftschool.loftschoolmoneytracker;
 
+import android.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
+
+  //  private ListView listview;
+   // private TransactionAdapter transactionAdapter;
+    //private Date dateTime;
+   // List<Transaction> data = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getFragmentManager().findFragmentById(R.id.fragment_tramsaction);
+        final Transaction_Fragment fragmentById = (Transaction_Fragment)getFragmentManager().findFragmentById(R.id.fragment_tramsaction);
+
+
+     //  List <Transaction> adapterData;
+       //adapterData = getTransactions();
+       //transactionAdapter = new TransactionAdapter(this,adapterData);
+       //listview = (ListView)findViewById(R.id.list);
+      // listview.setAdapter(transactionAdapter);
+
+
+
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+   // private List<Transaction> getTransactions()
+   // {
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+  //      Date now_calendar = Calendar.getInstance().getTime();
+    //    String dateToday = dateFormat.format(now_calendar);
 
-        return super.onOptionsItemSelected(item);
-    }
+
+
+      //  data.add(new Transaction("Phone",200, dateToday));
+        //data.add(new Transaction("Meal",300, dateToday));
+        //data.add(new Transaction("Bus",300,dateToday));
+       // return data;
+//    }
 }
