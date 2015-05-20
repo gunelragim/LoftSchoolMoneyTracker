@@ -2,4 +2,11 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="drawer_list_widht">150dp</dimen>
+    <dimen name="navigation_items_padding">150dp</dimen>
+    <dimen name="date_marginLeft">190dp</dimen>
+    <dimen name="date_marginRight">50dp</dimen>
+    <dimen name="date_marginTop">-21dp</dimen>
+    <dimen name="sum_marginLeft">150dp</dimen>
+    <dimen name="title_textSize">16dp</dimen>
 </resources>

@@ -1,7 +1,5 @@
 package ru.loftschool.loftschoolmoneytracker;
 
-import java.util.Date;
-
 /**
  * Created by Гюнель on 04.05.2015.
  */
@@ -20,31 +18,25 @@ public class Transaction {
         return title;
     }
 
-    public void setTitle(String title)
-    {
-        this.title=title;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public int getSum() {
         return sum;
     }
 
-    public void setSum(int sum)
-    {
-        this.sum=sum;
+    public void setSum(int sum) {
+        this.sum = sum;
     }
 
-    public String getDateTime()
-    {
-        return  date;
+    public String getDateTime() {
+        return date;
     }
 
-    public void setDateTime(String date)
-    {
-        this.date=date;
+    public void setDateTime(String date) {
+        this.date = date;
     }
-
-
 
 
 }

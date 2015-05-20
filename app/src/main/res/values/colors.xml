@@ -5,4 +5,11 @@
     <color name="dateGreen">#42A63A</color>
     <color name="backgroundGreen">#D3FBD0</color>
     <color name="whiteColor">#FFFFFF</color>
+    <color name="toolbar_green">#127D1E</color>
+    <color name="drawer_item_color">#FF33B5E5</color>
+    <color name="background">#F7F7F7</color>
+    <color name="green">#1A9C56</color>
+    <color name="text_color">#7F7F7F</color>
+    <color name="green_dark">#157E46</color>
+    <color name="left_drawer_background">#111</color>
 </resources>

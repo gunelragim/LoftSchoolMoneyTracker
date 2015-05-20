@@ -13,22 +13,21 @@ import java.util.List;
  * Created by Гюнель on 04.05.2015.
  */
 public class TransactionAdapter extends ArrayAdapter<Transaction> {
-    public  TransactionAdapter(Context context, List<Transaction> transactions){
-        super(context,0,transactions);
+    public TransactionAdapter(Context context, List<Transaction> transactions) {
+        super(context, 0, transactions);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         Transaction transaction = getItem(position);
-        if (convertView==null)
-        {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-         TextView title = (TextView)convertView.findViewById(R.id.title);
-        TextView sum = (TextView)convertView.findViewById(R.id.sum);
-        TextView date = (TextView)convertView.findViewById(R.id.date);
+        TextView title = (TextView) convertView.findViewById(R.id.title);
+        TextView sum = (TextView) convertView.findViewById(R.id.sum);
+        TextView date = (TextView) convertView.findViewById(R.id.date);
 
         title.setText(transaction.getTitle());
         sum.setText(Integer.toString(transaction.getSum()));
