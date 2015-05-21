@@ -9,4 +9,6 @@
     <dimen name="date_marginTop">-21dp</dimen>
     <dimen name="sum_marginLeft">150dp</dimen>
     <dimen name="title_textSize">16dp</dimen>
+    <dimen name="listView_height">0.4dp</dimen>
+    <dimen name="listItem_marginLeft">10dp</dimen>
 </resources>

@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/title"
         android:text="TITLE"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="@dimen/listItem_marginLeft"
         android:textColor="@color/titleBlue"
         android:textSize="@dimen/title_textSize"
         />
