@@ -7,15 +7,13 @@
 
 
     <style name="Form">
-                <item name="android:layout_width">match_parent</item>
-                <item name="android:layout_height">match_parent</item>
-                <item name="android:gravity">center_horizontal</item>
-                <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
 
-           </style>
+    </style>
 
-        <style name="Form.Background">
-            <item name="android:background">@drawable/android_app_back</item>
-       </style>
+    <style name="Form.Background"></style>
 
 </resources>

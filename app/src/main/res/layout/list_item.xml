@@ -16,35 +16,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/title"
-        android:text="TITLE"
-        android:layout_marginLeft="10dp"
+        android:text="@string/titleText"
+        android:layout_marginLeft="@dimen/title_marginLeft"
         android:textColor="@color/titleBlue"
-        android:textSize="16dp"
+        android:textSize="@dimen/title_textSize"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/date"
-        android:text="DATE"
-        android:layout_marginLeft="190dp"
-        android:layout_marginRight="50dp"
-
+        android:text="@string/dateText"
+        android:layout_marginLeft="@dimen/date_marginLeft"
+        android:layout_marginRight="@dimen/date_marginRight"
         android:textColor="@color/dateGreen"
-        android:layout_marginTop="-21dp"
-
+        android:layout_marginTop="@dimen/date_marginTop"
       />
-
 </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/sum"
-        android:text="SUM"
-        android:layout_marginLeft="150dp"
+        android:text="@string/sumText"
+        android:layout_marginLeft="@dimen/sum_marginLeft"
         android:textColor="@color/sumRed"/>
-
-
-
 </RelativeLayout>
