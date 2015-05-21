@@ -30,12 +30,7 @@ public class MainActivity extends ActionBarActivity {
         leftDrawer.setAdapter(navigationDrawerAdapter);
         leftDrawer.setOnItemClickListener(new DrawerItemClickListener());
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
-
+        setSupportActionBar(toolbar);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name);
         drawerLayout.setDrawerListener(drawerToggle);
     }
