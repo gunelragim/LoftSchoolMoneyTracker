@@ -11,4 +11,9 @@
     <dimen name="title_textSize">16dp</dimen>
     <dimen name="listView_height">0.4dp</dimen>
     <dimen name="listItem_marginLeft">10dp</dimen>
+    <dimen name="card_height">60dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_marginBottom">7dp</dimen>
+    <dimen name="card_cornerRadius">3dp</dimen>
+    <dimen name="fab_margin">5dp</dimen>
 </resources>
