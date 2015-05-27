@@ -10,23 +10,29 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
+@EActivity(R.layout.activity_main)
 public class MainActivity extends ActionBarActivity {
 
-    private Toolbar toolbar;
-    private DrawerLayout drawerLayout;
-    private ListView leftDrawer;
+    @ViewById
+    Toolbar toolbar;
+
+    @ViewById
+    DrawerLayout drawerLayout;
+
+    @ViewById
+    ListView leftDrawer;
+
     private ActionBarDrawerToggle drawerToggle;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    @AfterViews
+    void ready() {
         String[] navigationData = getResources().getStringArray(R.array.navigation_data);
         ArrayAdapter<String> navigationDrawerAdapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, navigationData);
-        leftDrawer = (ListView) findViewById(R.id.left_drawer);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         leftDrawer.setAdapter(navigationDrawerAdapter);
         leftDrawer.setOnItemClickListener(new DrawerItemClickListener());
         toolbar = (Toolbar) findViewById(R.id.toolbar);
